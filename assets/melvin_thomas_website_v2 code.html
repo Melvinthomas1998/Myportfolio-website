@@ -1,4 +1,15 @@
-/* ── TOKENS ────────────────────────────────────────────── */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Melvin Thomas — Synthetic Organic Chemist with 7 years R&D experience in fluorescent dyes, flow chemistry, and green synthesis. Research Associate at Bio-Rad Laboratories." />
+  <title>Melvin Thomas | Synthetic Organic Chemist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    /* ── TOKENS ────────────────────────────────────────────── */
     :root {
       --navy:        #0D1F3C;
       --navy-mid:    #1A2F52;
@@ -280,30 +291,29 @@
       margin-bottom: 1.4rem;
     }
     .about-text p strong { color: var(--navy); font-weight: 600; }
-    .about-arrows { list-style: none; margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1.25rem; }
+    .about-arrows { list-style: none; margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem; }
     .about-arrows li {
-      position: relative;
-      padding-left: 1.5rem;
+      display: flex; gap: 0.75rem;
       font-size: 0.97rem;
       color: var(--text-mid);
-      line-height: 1.7;
+      line-height: 1.6;
     }
     .about-arrows li::before {
       content: '→';
       color: var(--teal);
       font-weight: 700;
-      position: absolute;
-      left: 0;
-      top: 0;
+      flex-shrink: 0;
+      margin-top: 0.05em;
     }
     .about-arrows li strong { color: var(--navy); }
     .about-side { display: flex; flex-direction: column; gap: 1.5rem; }
     .about-img {
       border-radius: 12px;
       overflow: hidden;
+      aspect-ratio: 4/3;
       background: var(--off-white);
     }
-    .about-img img { width: 100%; height: auto; display: block; }
+    .about-img img { width: 100%; height: 100%; object-fit: cover; }
     .about-toolkit {
       background: var(--navy);
       border-radius: 12px;
@@ -913,3 +923,515 @@
     @media (max-width: 600px) {
       .creative-works-grid { grid-template-columns: 1fr; }
     }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">Melvin <span>Thomas</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#publications">Research</a></li>
+      <li><a href="#creative">Creative</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="mol-ring"></div>
+      <div class="mol-ring"></div>
+      <div class="mol-ring"></div>
+      <div class="mol-ring"></div>
+      <div class="mol-dot"></div>
+      <div class="mol-dot"></div>
+      <div class="mol-dot"></div>
+      <div class="mol-dot"></div>
+      <div class="mol-line"></div>
+      <div class="mol-line"></div>
+      <div class="mol-line"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">Research Associate · Bio-Rad Laboratories</div>
+      <h1 class="hero-title">I build molecules<br>that <em>work.</em></h1>
+      <p class="hero-sub">Fluorescent dyes that illuminate biology. Antidepressant APIs made cleaner and faster in a flow reactor. Green chemistry that eliminates solvents entirely.</p>
+      <div class="hero-domains">
+        <span class="hero-domain">Synthetic Organic Chemistry</span>
+        <span class="hero-domain">Flow Chemistry</span>
+        <span class="hero-domain">Fluorescent Dyes</span>
+        <span class="hero-domain">Green Synthesis</span>
+        <span class="hero-domain">UCSB · Bio-Rad</span>
+      </div>
+      <div class="hero-ctas">
+        <a href="#experience" class="btn-primary">View Research →</a>
+        <a href="#contact" class="btn-secondary">Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-num">7+</div>
+          <div class="hero-stat-label">Years R&D</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">&gt;95%</div>
+          <div class="hero-stat-label">Purity Targets</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">2</div>
+          <div class="hero-stat-label">Manuscripts</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">2</div>
+          <div class="hero-stat-label">National Fellowships</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-label">About</div>
+    <h2 class="section-title">Precision chemistry.<br><span>A clear line to impact.</span></h2>
+    <div class="about-grid reveal">
+      <div class="about-text">
+        <p>I'm a synthetic organic chemist working at the intersection of <strong>precision and scale.</strong> For 7 years, I've taken hard synthetic problems and turned them into characterized, reproducible compounds — the kind that move pipelines forward.</p>
+        <ul class="about-arrows">
+          <li><strong>At Bio-Rad,</strong> I synthesize and characterize novel fluorescent dyes for biological imaging — advancing reagent pipelines from concept to compound-ready stage with NMR, HPLC, FT-IR, and GC-MS validating every batch to &gt;95% purity.</li>
+          <li><strong>At UCSB,</strong> I engineered a heterogeneous catalyst and continuous flow reactor system to synthesize Moclobemide more cleanly and scalably than conventional batch routes — and developed two solvent-free green chemistry protocols that are the foundation of upcoming publications.</li>
+          <li><strong>Across bioactive alkaloid analogs, natural product isolation, chiral aziridine synthesis, and industry-partnered flow chemistry</strong> — I've built the kind of range that lets me walk into an unfamiliar synthetic problem and find a path through it.</li>
+        </ul>
+      </div>
+      <div class="about-side">
+        <div class="about-img">
+          <img src="assets/about_me_section_1777824024984.png" alt="Fluorescent dye synthesis" loading="lazy" />
+        </div>
+        <div class="about-toolkit">
+          <div class="about-toolkit-title">Full Toolkit</div>
+          <div class="toolkit-tags">
+            <span class="toolkit-tag">multi-step synthesis</span>
+            <span class="toolkit-tag">flow chemistry</span>
+            <span class="toolkit-tag">heterogeneous catalysis</span>
+            <span class="toolkit-tag">NMR (1H, 13C, 2D)</span>
+            <span class="toolkit-tag">HPLC</span>
+            <span class="toolkit-tag">GC-MS</span>
+            <span class="toolkit-tag">glovebox & Schlenk</span>
+            <span class="toolkit-tag">ChemDraw</span>
+            <span class="toolkit-tag">SciFinder</span>
+            <span class="toolkit-tag">micellar chemistry</span>
+            <span class="toolkit-tag">FT-IR</span>
+            <span class="toolkit-tag">UV-Vis / Fluorimetry</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERTISE / SKILLS -->
+  <section id="expertise">
+    <div class="section-label">Expertise</div>
+    <h2 class="section-title">Laboratory &amp;<br><span>Instrumentation</span></h2>
+    <p class="section-lead">Extensive experience with high-end analytical instrumentation for characterization of complex synthetic targets and fluorescent probes.</p>
+
+    <div class="instr-grid reveal">
+      <div class="instr-card">
+        <div class="instr-img"><img src="assets/nmr_spectrometer_1777824413278.png" alt="NMR Spectrometer" loading="lazy" /></div>
+        <div class="instr-info">
+          <div class="instr-name">NMR Spectroscopy</div>
+          <div class="instr-desc">Structural elucidation — 1H, 13C, 2D experiments, NMR yield quantification</div>
+        </div>
+      </div>
+      <div class="instr-card">
+        <div class="instr-img"><img src="assets/hplc_system_1777824693211.png" alt="HPLC System" loading="lazy" /></div>
+        <div class="instr-info">
+          <div class="instr-name">HPLC</div>
+          <div class="instr-desc">Purity analysis, separation, and method development for synthetic targets</div>
+        </div>
+      </div>
+      <div class="instr-card">
+        <div class="instr-img"><img src="assets/uv_spectrophotometer_1777824958472.png" alt="UV-Vis Spectrophotometer" loading="lazy" /></div>
+        <div class="instr-info">
+          <div class="instr-name">UV-Vis Spectroscopy</div>
+          <div class="instr-desc">Absorption properties of fluorescent dyes and chromophoric compounds</div>
+        </div>
+      </div>
+      <div class="instr-card">
+        <div class="instr-img"><img src="assets/ir_spectrometer_1777824977522.png" alt="FT-IR Spectrometer" loading="lazy" /></div>
+        <div class="instr-info">
+          <div class="instr-name">FT-IR Spectroscopy</div>
+          <div class="instr-desc">Functional group characterization and material analysis</div>
+        </div>
+      </div>
+      <div class="instr-card">
+        <div class="instr-img"><img src="assets/dls_instrument_1777825031883.png" alt="DLS Instrument" loading="lazy" /></div>
+        <div class="instr-info">
+          <div class="instr-name">Dynamic Light Scattering</div>
+          <div class="instr-desc">Nanoparticle sizing and solution behavior in formulation contexts</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills matrix -->
+    <div style="margin-top: 4rem;">
+      <div class="section-label">Skills Matrix</div>
+    </div>
+    <div class="skills-grid reveal">
+      <div class="skills-col-head">Synthesis</div>
+      <div class="skills-col-head">Characterization</div>
+      <div class="skills-col-head">Software</div>
+      <div class="skills-col-head">Competencies</div>
+      <div class="skills-cell">Multi-step synthesis</div>
+      <div class="skills-cell">1H/13C NMR (2D)</div>
+      <div class="skills-cell">ChemDraw</div>
+      <div class="skills-cell">Green chemistry</div>
+      <div class="skills-cell">Flow chemistry</div>
+      <div class="skills-cell">FT-IR</div>
+      <div class="skills-cell">SciFinder / Reaxys</div>
+      <div class="skills-cell">Drug discovery tools</div>
+      <div class="skills-cell">Heterogeneous catalysis</div>
+      <div class="skills-cell">GC-MS</div>
+      <div class="skills-cell">MNova</div>
+      <div class="skills-cell">Cross-functional collab</div>
+      <div class="skills-cell">Glovebox & Schlenk</div>
+      <div class="skills-cell">HPLC</div>
+      <div class="skills-cell">Chimera</div>
+      <div class="skills-cell">Science communication</div>
+      <div class="skills-cell">Micellar chemistry</div>
+      <div class="skills-cell">UV-Vis / Fluorimetry</div>
+      <div class="skills-cell">Endnote</div>
+      <div class="skills-cell">Project management</div>
+      <div class="skills-cell">Column chromatography</div>
+      <div class="skills-cell">DLS</div>
+      <div class="skills-cell">Microsoft Office</div>
+      <div class="skills-cell">Pharma synthesis</div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-label">Experience &amp; Education</div>
+    <h2 class="section-title">Research &amp;<br><span>Professional History</span></h2>
+
+    <div class="exp-timeline">
+
+      <div class="exp-item reveal">
+        <div class="exp-meta">
+          <div class="exp-role">Research Associate</div>
+          <div class="exp-company">Bio-Rad Laboratories</div>
+          <div class="exp-period">Sept 2022 – Present</div>
+          <div class="exp-tag">Current Role</div>
+          <div style="margin-top:0.6rem; font-size:0.82rem; color:var(--text-light);">Hercules, CA</div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Built a novel library of <strong>fluorescent dyes for biological imaging</strong> from scratch — advancing Bio-Rad's life science reagent pipeline from concept to compound-ready stage</li>
+          <li>Maintained <strong>&gt;95% purity targets</strong> across all batches using 1H/13C NMR, FT-IR, HPLC, and GC-MS for rigorous structural confirmation</li>
+          <li>Partnered with biology and product development teams to align synthetic deliverables with downstream assay requirements — directly <strong>reducing rework cycles</strong></li>
+        </ul>
+      </div>
+
+      <div class="exp-divider"></div>
+
+      <div class="exp-item reveal">
+        <div class="exp-meta">
+          <div class="exp-role">Graduate Student Researcher</div>
+          <div class="exp-company">UC Santa Barbara</div>
+          <div class="exp-period">Sept 2019 – Sept 2022</div>
+          <div class="exp-tag">M.S. Chemistry</div>
+          <div class="exp-thesis">Thesis: Azacycle Synthesis &amp; Ester Amidation in Flow</div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Engineered a novel <strong>heterogeneous catalyst + continuous flow reactor</strong> to synthesize Moclobemide (antidepressant API) — scalable route with reduced solvent waste vs. batch methods</li>
+          <li>Developed two <strong>green chemistry protocols</strong> (ketone deoxygenation in aqueous micellar media; Pd/C-catalyzed hydrogenation of nitroarenes in water) — eliminating organic solvents with zero yield penalty</li>
+          <li>Collaborated with two <strong>industry partners</strong> on flow chemistry process development; co-authoring 2 manuscripts (in preparation) on azacycle synthesis and catalytic ester amidation</li>
+          <li>Managed <strong>3+ concurrent research projects</strong> simultaneously alongside industry collaborations and teaching responsibilities</li>
+        </ul>
+      </div>
+
+      <div class="exp-divider"></div>
+
+      <div class="exp-item reveal">
+        <div class="exp-meta">
+          <div class="exp-role">Master's Researcher</div>
+          <div class="exp-company">Mahatma Gandhi University</div>
+          <div class="exp-period">Aug 2016 – Sept 2017</div>
+          <div class="exp-tag">B.S./M.S. Chemical Sciences</div>
+          <div style="margin-top:0.6rem; font-size:0.82rem; color:var(--text-light);">Kottayam, India</div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Synthesized structural analogs of <strong>bioactive alkaloids (Crispine A, Harmicine)</strong> probing structure-activity relationships relevant to anticancer and antileishmanial scaffolds</li>
+          <li>Isolated and fully characterized <strong>Garcinia acid from Garcinia cambogia</strong> using multi-step extraction, column chromatography, NMR, IR, and GC-MS</li>
+          <li>Awarded two nationally competitive fellowships: <strong>S.N. Bose Fellowship</strong> (Dept. of Science &amp; Technology, Govt. of India) and <strong>Indian Academy of Science Research Fellowship</strong></li>
+        </ul>
+      </div>
+
+      <div class="exp-divider"></div>
+
+      <div class="exp-item reveal">
+        <div class="exp-meta">
+          <div class="exp-role">Research Intern</div>
+          <div class="exp-company">Juniata College</div>
+          <div class="exp-period">June – Aug 2016</div>
+          <div class="exp-tag">International Research</div>
+          <div style="margin-top:0.6rem; font-size:0.82rem; color:var(--text-light);">Huntingdon, PA</div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Synthesized <strong>chiral aziridines via copper hydride-mediated asymmetric reduction</strong> of aryl 2H-azirines — contributing to methodology for enantioselective nitrogen heterocycle construction</li>
+          <li>Presented synthetic results and mechanistic rationale to a cross-disciplinary audience at institutional research symposium</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications">
+    <div class="section-label">Research Output</div>
+    <h2 class="section-title">Publications</h2>
+    <p class="section-lead">Two manuscripts currently in preparation — documenting novel methodology developed during graduate research at UCSB.</p>
+    <div class="pubs-grid reveal">
+      <div class="pub-card">
+        <div class="pub-status">Manuscript in Preparation</div>
+        <div class="pub-title">"Direct Catalytic Synthesis of N-Substituted Azacycles from Cyclic Ethers"</div>
+        <div class="pub-meta">University of California, Santa Barbara · Flow Chemistry &amp; Heterogeneous Catalysis</div>
+      </div>
+      <div class="pub-card">
+        <div class="pub-status">Manuscript in Preparation</div>
+        <div class="pub-title">"Heterogeneous Catalytic Amidation of Esters in Flow"</div>
+        <div class="pub-meta">University of California, Santa Barbara · Green Chemistry &amp; Flow Synthesis</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AWARDS -->
+  <section id="awards">
+    <div class="section-label">Recognition</div>
+    <h2 class="section-title">Awards &amp;<br><span>Fellowships</span></h2>
+    <div class="awards-grid reveal">
+      <div class="award-card">
+        <div class="award-icon">🏆</div>
+        <div class="award-body">
+          <div class="award-title">S.N. Bose Fellowship</div>
+          <div class="award-org">Department of Science &amp; Technology, Government of India — nationally competitive, merit-based award for exceptional research performance</div>
+        </div>
+      </div>
+      <div class="award-card">
+        <div class="award-icon">🔬</div>
+        <div class="award-body">
+          <div class="award-title">Indian Academy of Science Research Fellowship</div>
+          <div class="award-org">Merit-based national research recognition from one of India's premier scientific institutions</div>
+        </div>
+      </div>
+      <div class="award-card">
+        <div class="award-icon">🎬</div>
+        <div class="award-body">
+          <div class="award-title"><a href="https://www.youtube.com/watch?v=ea4wMg-WAwg" target="_blank" rel="noopener" style="color:var(--navy);border-bottom:1px solid var(--teal);padding-bottom:1px;">Bronze Beaver Award ↗</a></div>
+          <div class="award-org">National Science Film Festival — directed science documentary on climate change, awarded at national level (2017)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREATIVE -->
+  <section id="creative">
+    <div class="creative-bg-glow"></div>
+    <div class="creative-bg-glow2"></div>
+    <div style="position:relative;z-index:1;">
+      <div class="section-label">Beyond the Bench</div>
+      <h2 class="section-title">The Creative Mind<br><span style="color:var(--gold);">Behind the Chemistry</span></h2>
+      <p class="creative-intro">
+        The same instincts that make a good chemist — <strong>pattern recognition, tolerance for ambiguity, the ability to reframe a problem entirely</strong> — show up in creative work too. I write, direct, and compose. Not as a hobby separate from science, but as a practice that sharpens the way I think across all domains.
+      </p>
+
+      <div class="creative-crossover reveal">
+        <div class="crossover-card">
+          <div class="crossover-icon">🎬</div>
+          <div>
+            <div class="crossover-title">Storytelling → Science Communication</div>
+            <div class="crossover-body">Directing a national award-winning science film taught me how to translate dense technical content into narratives that move people. That skill is directly at work when I present research findings, write cross-functional briefs, or align a biology team with a synthetic strategy.</div>
+          </div>
+        </div>
+        <div class="crossover-card">
+          <div class="crossover-icon">✍️</div>
+          <div>
+            <div class="crossover-title">Poetry → Precision of Language</div>
+            <div class="crossover-body">Writing poetry is an exercise in saying exactly the right thing with the minimum number of words — the same discipline that makes a well-characterized compound report or a clear methods section. Clarity is clarity, whether the medium is verse or a reaction scheme.</div>
+          </div>
+        </div>
+        <div class="crossover-card">
+          <div class="crossover-icon">🎵</div>
+          <div>
+            <div class="crossover-title">Music → Systems Thinking</div>
+            <div class="crossover-body">Composing requires holding an entire architecture in your head while attending to individual notes — the same cognitive mode as designing a multi-step synthetic route. Both demand awareness of how each decision propagates through the whole.</div>
+          </div>
+        </div>
+        <div class="crossover-card">
+          <div class="crossover-icon">🔬</div>
+          <div>
+            <div class="crossover-title">Multidisciplinary by Design</div>
+            <div class="crossover-body">Chemists who only think like chemists hit walls that require other tools to get through. My creative practice keeps me genuinely cross-disciplinary — comfortable moving between intuitive and analytical modes, and less likely to be stuck in a single problem-solving frame.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="creative-works-title">Creative Works</div>
+      <div class="creative-works-grid reveal">
+
+        <!-- Film -->
+        <a href="https://www.youtube.com/watch?v=ea4wMg-WAwg" target="_blank" rel="noopener" class="creative-work-card">
+          <div class="work-thumb">
+            <div class="work-thumb-bg" style="background-image: url('https://img.youtube.com/vi/ea4wMg-WAwg/maxresdefault.jpg');"></div>
+            <div class="work-type-badge">🏆 National Award</div>
+            <div class="work-play">▶</div>
+          </div>
+          <div class="work-info">
+            <div class="work-title">Short Film on Climate Change</div>
+            <div class="work-desc">Bronze Beaver Award winner at the National Science Film Festival. Written and directed by Melvin Thomas. Science through cinema — making the invisible urgency of climate change visceral and human.</div>
+            <div class="work-link-label">Watch on YouTube →</div>
+          </div>
+        </a>
+
+        <!-- Poem -->
+        <a href="https://www.youtube.com/watch?v=mF6nDyJZ4p0" target="_blank" rel="noopener" class="creative-work-card">
+          <div class="work-thumb">
+            <div class="work-thumb-bg" style="background-image: url('https://img.youtube.com/vi/mF6nDyJZ4p0/maxresdefault.jpg');"></div>
+            <div class="work-type-badge">✍️ Poetry</div>
+            <div class="work-play">▶</div>
+          </div>
+          <div class="work-info">
+            <div class="work-title">MERCY — A Poem on Self-Compassion &amp; Self-Love</div>
+            <div class="work-desc">A letter-form poem exploring the practice of turning compassion inward. Written and performed by Melvin Thomas. On the discipline of being kind to yourself with the same rigor you'd apply to anything else worth caring for.</div>
+            <div class="work-link-label">Watch on YouTube →</div>
+          </div>
+        </a>
+
+        <!-- Song -->
+        <a href="https://www.youtube.com/watch?v=PcqzgKCPtOw" target="_blank" rel="noopener" class="creative-work-card">
+          <div class="work-thumb">
+            <div class="work-thumb-bg" style="background-image: url('https://img.youtube.com/vi/PcqzgKCPtOw/maxresdefault.jpg');"></div>
+            <div class="work-type-badge">🎵 Music</div>
+            <div class="work-play">▶</div>
+          </div>
+          <div class="work-info">
+            <div class="work-title">The Gratitude Song</div>
+            <div class="work-desc">An original composition by Melvin Thomas. A meditation on gratitude as a practice rather than a feeling — set to music, because some things land differently when they're sung.</div>
+            <div class="work-link-label">Watch on YouTube →</div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-glow"></div>
+    <div class="contact-inner">
+      <div>
+        <div class="section-label">Contact</div>
+        <h2 class="section-title">Let's Build Something<br>Worth Characterizing.</h2>
+        <p class="section-lead">Whether you're advancing a reagent pipeline, exploring flow chemistry for scale-up, or need a synthetic chemist who can move from idea to characterized compound — I want to hear about the problem.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-ico">📍</div>
+            <div>
+              <div class="contact-item-label">Location</div>
+              <div class="contact-item-value">Hercules, CA</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-ico">🔗</div>
+            <div>
+              <div class="contact-item-label">LinkedIn</div>
+              <div class="contact-item-value"><a href="https://www.linkedin.com/in/melvinthomas-chemist" target="_blank" rel="noopener">linkedin.com/in/melvinthomas-chemist</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-ico">✉️</div>
+            <div>
+              <div class="contact-item-label">Email</div>
+              <div class="contact-item-value"><a href="mailto:thomas.melvin68@yahoo.in">thomas.melvin68@yahoo.in</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-trust">
+          <div class="trust-item">Currently at Bio-Rad Laboratories, Hercules CA</div>
+          <div class="trust-item">Open to R&D Scientist roles in drug discovery, diagnostics &amp; specialty chemicals</div>
+          <div class="trust-item">2 manuscripts in preparation — active researcher, not just practitioner</div>
+          <div class="trust-item">Available for collaboration, consulting &amp; full-time opportunities</div>
+        </div>
+      </div>
+      <div class="contact-form-wrap reveal">
+        <div class="form-title">Send a Message</div>
+        <form onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Collaboration / Opportunity / Question" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit" id="submit-btn">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 <span>Melvin Thomas</span>. Synthetic Organic Chemist · Bio-Rad Laboratories · Hercules, CA
+  </footer>
+
+  <script>
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          e.target.style.transitionDelay = (i * 0.05) + 's';
+          e.target.classList.add('visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => io.observe(el));
+
+    // Form
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = document.getElementById('submit-btn');
+      btn.textContent = 'Message Sent ✓';
+      btn.style.background = '#1A7A4A';
+      btn.disabled = true;
+      setTimeout(() => {
+        btn.textContent = 'Send Message →';
+        btn.style.background = '';
+        btn.disabled = false;
+        e.target.reset();
+      }, 3500);
+    }
+
+    // Nav active states
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const navObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          navLinks.forEach(a => a.style.color = '');
+          const active = document.querySelector(`.nav-links a[href="#${e.target.id}"]`);
+          if (active) active.style.color = 'var(--teal-bright)';
+        }
+      });
+    }, { rootMargin: '-40% 0px -40% 0px' });
+    sections.forEach(s => navObs.observe(s));
+  </script>
+</body>
+</html>
